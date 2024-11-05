@@ -1,0 +1,73 @@
+[versions]
+accompanist = "0.36.0"
+activityCompose = "1.8.0"
+agp = "8.7.1"
+androidxHilt = "1.2.0"
+composeBom = "2024.10.00"
+coreKtx = "1.10.1"
+coreTest = "2.2.0"
+coroutinesTest = "1.9.0"
+espressoCore = "3.5.1"
+gms = "21.3.0"
+gmsMaps = "19.0.0"
+hiltAndroid = "2.51.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+kotlin = "2.0.0"
+lifecycleRuntimeKtx = "2.8.6"
+mapsCompose = "6.1.0"
+mockitoAndroid = "5.14.2"
+mockitoCore = "5.12.0"
+mockitoInline = "2.13.0"
+mockk = "1.13.13"
+navigationCompose = "2.8.3"
+okhttp_interceptor = "4.12.0"
+retrofit = "2.11.0"
+viewmodelCompose = "2.8.6"
+core = "1.46.0"
+
+[libraries]
+accompanist = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist"}
+android-gms = { group = "com.google.android.gms", name = "play-services-location", version.ref = "gms"}
+android-gms-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "gmsMaps"}
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-hilt = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHilt" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewmodelCompose" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroid" }
+google-maps-compose = { group = "com.google.maps.android", name = "maps-compose", version.ref = "mapsCompose" }
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp_interceptor"}
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit"}
+#Test libraries
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-executor-test = { group= "androidx.arch.core", name = "core-testing", version.ref = "coreTest" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hiltAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlin-coroutines-test = { group= "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+mockito = { group= "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
+mockito-android = { group= "org.mockito", name = "mockito-android", version.ref = "mockitoAndroid" }
+mockito-inline = { group= "org.mockito", name = "mockito-inline", version.ref = "mockitoInline" }
+mockk = { group= "io.mockk", name = "mockk", version.ref = "mockk" }
+mockk-Android = { group= "io.mockk", name = "mockk-android", version.ref = "mockk" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
